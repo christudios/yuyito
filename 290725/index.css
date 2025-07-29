@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between
+    background-color: purple;
+    & .container{
+        background-color: aqua;
+        min-width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        & img{
+            width: 5rem;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    & nav{
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+        width: 100%;
+
+        & ul{
+            background-color: red;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            padding: 3rem;
+            font-size: 1.5rem;
+
+        }
+
+    }
+}
